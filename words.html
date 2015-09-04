@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Untitled Document</title>
+</head>
+
+<body>
+  <!--https://code.google.com/p/jspos-->
+  <script type="text/javascript" src="lexer.js"></script>
+  <script type="text/javascript" src="words.js"></script>
+  <script type="text/javascript" src="lexicon.js_"></script>
+  <script type="text/javascript" src="POSTagger.js"></script>
+
+  <div>
+    Word Frequency Analysis & Part of Speech Tagging
+  </div>
+
+  <button name="button" onclick="lex();" >Lexer</button>
+  <button name="button" onclick="frequency();" >Frequency</button>
+
+  <h3>Sample Text</h3>
+
+  <textarea id="input_text" rows="50" cols="90">
+  Sample Text Goes Here
+  </textarea>
+
+  <h3>Tagged Sample Text</h3>
+  <div id="tagged_text"></div>
+  <div id="word_frequency"></div>
+
+</body>
+</html>
