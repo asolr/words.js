@@ -1,37 +1,18 @@
 ABOUT:
 
-This is a JavaScript word frequency and lexer port by me Asher Martin of
-jspos a port of Mark Watson's FastTag Part of Speech Tagger which was
-itself based on Eric Brill's trained rule set and English lexicon.
+THIS CODE DOESN'T WORK YET and is from another project.
 
-LICENSE:
-
-GNU LGPLv3
-
-FILES:
-
-words.js - javascript word frequency tools.
-lexicon.js_ - Javascript version of Eric Brill's English lexicon
-lexer.js - Lexer to break a sentence into taggable tokens (e.g. words)
-POSTagger.js - the Part of Speech tagger
-
-You'll typically need to include all 4 files.
+I want to experiment with language processing.
 
 USAGE:
 
-var words = new Lexer().lex("This is some sample text. This text can contain multiple sentences.");
+var words = new Lexer().lex("This is some sample text. This text can include a paragraph.");
 var taggedWords = new POSTagger().tag(words);
 for (i in taggedWords) {
     var taggedWord = taggedWords[i];
     var word = taggedWord[0];
     var tag = taggedWord[1];
 }
-
-ACKNOWLEDGEMENTS:
-
-Thanks to Mark Watson for writing FastTag, which served as the basis for jspos.
-
-Thanks to Toby Rahilly for compressing the lexicon.
 
 TAGS:
 
